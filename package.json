@@ -1,6 +1,6 @@
 {
-  "name": "@aiherrera/create-react-library",
-  "version": "1.0.0",
+  "name": "@aiherrera/react-hamburger",
+  "version": "1.0.4",
   "description": "A simple configuration for creating react libraries",
   "license": "MIT",
   "author": {
@@ -8,15 +8,16 @@
     "email": "info@aiherrera.com",
     "url": "https://www.aiherrera.com"
   },
+  "homepage": "https://coderlab.aiherrera.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aiherrera/create-react-library.git"
+    "url": "git+https://github.com/aiherrera/react-hamburger.git"
   },
   "keywords": [
     "react",
-    "library",
-    "react-library",
-    "component"
+    "component",
+    "react-component",
+    "mobile"
   ],
   "module": "build/index.esm.js",
   "files": [

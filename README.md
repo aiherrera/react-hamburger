@@ -1,42 +1,70 @@
-# React Component Library
+# Hamburger Menu Button for React
 
-[![Build status](https://badge.buildkite.com/90ff98db996bb137c5be1bdce666c4b1ce68a25b17af0a6a04.svg?branch=master)](https://buildkite.com/harvey/react-component-library)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+This is a ready-to-go UI component built for React applications.
 
-### **Note**: This is an simplified & customized fork from [react-component-library](https://github.com/HarveyD/react-component-library) by Harvey Delaney
+## Installation
 
-This project skeleton was created to help people get started with creating their own React component library using:
+Requires **React 16 or later**
 
-- [Rollup](https://github.com/rollup/rollup)
-- [Sass](https://sass-lang.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/) to help you create and show off your components
-- [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
+`npm i --save @aiherrera/react-hamburger`
 
-## Development
+`# or`
 
-### Testing
+`yarn add @aiherrera/react-hamburger`
 
-```
-npm run test
-```
+## Demo
 
-### Building
+You can check all the configurations in this [playground](https://coderlab.aiherrera.com)
+
+## Usage
+
+`{ Hamburger }`
 
 ```
-npm run build
-```
+// ES5 syntax
+const Hamburger = require('@aiherrera/react-hamburger')
 
-### Storybook
-
-To run a live-reload Storybook server on your local machine:
-
-```
-npm run storybook
-```
-
-To export your Storybook as static files:
+// ES6 syntax
+import Hamburger from '@aiherrera/react-hamburger'
 
 ```
-npm run storybook:build
+
+### Full example
+
 ```
+import React from 'react'
+
+import Hamburger from '@aiherrera/react-hamburger'
+
+const App = () => {
+
+  const [state, setState] = useState(false)
+
+  const handleClick = () => {
+    setState(!state)
+  }
+
+  return (
+    <>
+      <Hamburger
+        handleClick={handleClick}
+        isOpened={state}
+      />
+    </>
+  )
+}
+```
+
+## Props
+
+All these props are passed as defaults and can be overriden any time.
+
+| Name      | Type   | Unit      | Description                                      | Default  |
+| --------- | ------ | --------- | ------------------------------------------------ | -------- |
+| color     | string | N/A       | Color of the <br> hamburger bars                 | #28282A  |
+| size      | string | N/A       | Size of the hamburger                            | 'medium' |
+| direction | string | N/A       | Where is located                                 | 'right'  |
+| device    | string | N/A       | In which devices is displayed <br> the component | 'all'    |
+| top       | string | px/em/rem | Distance from the top                            | '10px'   |
+| left      | string | px/em/rem | Distance from the left                           | 'auto'   |
+| right     | string | px/em/rem | Distance from the right                          | 'auto'   |

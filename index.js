@@ -1154,7 +1154,7 @@ var Hamburger = function (_a) {
             (_b = buttonRef.current) === null || _b === void 0 ? void 0 : _b.classList.remove('open');
         }
     }, [isOpened]);
-    return (r__default['default'].createElement(HamburgerButton, __assign({ className: 'hamburger', onClick: handleClick, ref: buttonRef, theme: { device: device, color: color, size: size, direction: direction, top: top, right: right, left: left } }, props),
+    return (r__default['default'].createElement(HamburgerButton, __assign({ "data-testid": 'hamburger', role: 'hamburger', className: 'hamburger', onClick: handleClick, ref: buttonRef, theme: { device: device, color: color, size: size, direction: direction, top: top, right: right, left: left } }, props),
         r__default['default'].createElement("div", { className: 'hamburger__button' })));
 };
 var templateObject_1;
