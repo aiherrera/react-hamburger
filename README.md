@@ -31,7 +31,7 @@ import Hamburger from '@aiherrera/react-hamburger'
 
 ### Full example
 
-```
+```TSX
 import React from 'react'
 
 import Hamburger from '@aiherrera/react-hamburger'
