@@ -14,7 +14,7 @@ Requires **React 16 or later**
 
 ## Demo
 
-You can check all the configurations in this [playground](https://coderlab.aiherrera.com/?path=/story/playground-react-components--hamburger-menu)
+You can check all the configurations in this [Ai-CoderLab](https://coderlab.aiherrera.com/?path=/story/playground-react-components--hamburger-menu)
 
 ## Usage
 
