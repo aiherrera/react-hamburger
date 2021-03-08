@@ -1,6 +1,6 @@
 # Hamburger Menu Button for React
 
-This is a ready-to-go UI component built for React applications.
+A simple & easy to use react Hamburger menu.
 
 ## Installation
 
