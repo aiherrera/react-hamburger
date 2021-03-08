@@ -136,8 +136,7 @@ export const Hamburger: FC<HamburgerProps> = ({
   top = '10px',
   right = 'auto',
   left = 'auto',
-  device = 'all',
-  ...props
+  device = 'all'
 }): JSX.Element => {
   const buttonRef = createRef<HTMLDivElement>()
 
@@ -157,7 +156,6 @@ export const Hamburger: FC<HamburgerProps> = ({
       onClick={handleClick}
       ref={buttonRef}
       theme={{ device, color, size, direction, top, right, left }}
-      {...props}
     >
       <div className='hamburger__button'></div>
     </HamburgerButton>
