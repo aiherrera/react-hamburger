@@ -14,7 +14,7 @@ Requires **React 16 or later**
 
 ## Demo
 
-You can check all the configurations in this [playground](https://coderlab.aiherrera.com/?path=/story/playground-react-components--hamburger-menu)
+You can check all the configurations in [Ai-CoderLab](https://coderlab.aiherrera.com/?path=/story/playground-react-components--hamburger-menu)
 
 ## Usage
 
@@ -31,7 +31,7 @@ import Hamburger from '@aiherrera/react-hamburger'
 
 ### Full example
 
-```
+```TSX
 import React from 'react'
 
 import Hamburger from '@aiherrera/react-hamburger'
