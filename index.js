@@ -23,29 +23,6 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
 function __makeTemplateObject(cooked, raw) {
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
     return cooked;
@@ -1143,7 +1120,7 @@ var HamburgerButton = Ye.div(templateObject_1 || (templateObject_1 = __makeTempl
     return props.theme.device === 'tablet' && '1024px';
 });
 var Hamburger = function (_a) {
-    var handleClick = _a.handleClick, isOpened = _a.isOpened, _b = _a.color, color = _b === void 0 ? '#28282A' : _b, _c = _a.direction, direction = _c === void 0 ? 'left' : _c, _d = _a.size, size = _d === void 0 ? 'medium' : _d, _e = _a.top, top = _e === void 0 ? '10px' : _e, _f = _a.right, right = _f === void 0 ? 'auto' : _f, _g = _a.left, left = _g === void 0 ? 'auto' : _g, _h = _a.device, device = _h === void 0 ? 'all' : _h, props = __rest(_a, ["handleClick", "isOpened", "color", "direction", "size", "top", "right", "left", "device"]);
+    var handleClick = _a.handleClick, isOpened = _a.isOpened, _b = _a.color, color = _b === void 0 ? '#28282A' : _b, _c = _a.direction, direction = _c === void 0 ? 'left' : _c, _d = _a.size, size = _d === void 0 ? 'medium' : _d, _e = _a.top, top = _e === void 0 ? '10px' : _e, _f = _a.right, right = _f === void 0 ? 'auto' : _f, _g = _a.left, left = _g === void 0 ? 'auto' : _g, _h = _a.device, device = _h === void 0 ? 'all' : _h;
     var buttonRef = r$1.createRef();
     r$1.useEffect(function () {
         var _a, _b;
@@ -1154,7 +1131,7 @@ var Hamburger = function (_a) {
             (_b = buttonRef.current) === null || _b === void 0 ? void 0 : _b.classList.remove('open');
         }
     }, [isOpened]);
-    return (r__default['default'].createElement(HamburgerButton, __assign({ "data-testid": 'hamburger', role: 'hamburger', className: 'hamburger', onClick: handleClick, ref: buttonRef, theme: { device: device, color: color, size: size, direction: direction, top: top, right: right, left: left } }, props),
+    return (r__default['default'].createElement(HamburgerButton, { "data-testid": 'hamburger', role: 'hamburger', className: 'hamburger', onClick: handleClick, ref: buttonRef, theme: { device: device, color: color, size: size, direction: direction, top: top, right: right, left: left } },
         r__default['default'].createElement("div", { className: 'hamburger__button' })));
 };
 var templateObject_1;
