@@ -66,7 +66,7 @@ const HamburgerButton = styled.div`
       : 'auto'};
 
   padding: 20px;
-  max-width: 50px;
+  max-width: 60px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
