@@ -71,14 +71,14 @@ const HamburgerButton = styled.div`
   align-items: center;
   cursor: pointer;
   z-index: 9;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 
   & > .hamburger__button {
     width: ${(props) => handleMidbarSize(props.theme.size)};
     height: 4px;
     background: ${(props) => props.theme.color};
     border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 
     &::before,
     &::after {
@@ -88,7 +88,7 @@ const HamburgerButton = styled.div`
       height: 4px;
       background: ${(props) => props.theme.color};
       border-radius: 5px;
-      transition: all 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, width 0.2s ease-in-out;
     }
 
     &::before {
